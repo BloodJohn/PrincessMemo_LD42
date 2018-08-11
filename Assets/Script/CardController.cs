@@ -55,9 +55,10 @@ public class CardController : MonoBehaviour
     public bool AddFog()
     {
         if (Fog) return false;
+        Fog = true;
+
         if (Status == MemoStatus.Deleted) return false;
 
-        Fog = true;
         UpdateStatus();
         return true;
     }
