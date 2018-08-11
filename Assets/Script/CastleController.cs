@@ -56,7 +56,7 @@ public class CastleController : MonoBehaviour
 
         turnCount++;
 
-        if (turnCount < 3) AddCard();
+        if (turnCount < 6) AddCard();
         else if (0 == turnCount % 3) AddCard();
     }
 

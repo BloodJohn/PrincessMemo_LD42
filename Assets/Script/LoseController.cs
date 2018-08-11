@@ -33,7 +33,7 @@ public class LoseController : MonoBehaviour
 
     private void OnClick()
     {
-        GameController.LoadScene();
+        CastleController.LoadScene();
     }
 
 }

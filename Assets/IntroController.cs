@@ -18,7 +18,8 @@ public class IntroController : MonoBehaviour
         ScreenBtn.onClick.AddListener(OnClick);
         _title = ScreenBtn.gameObject.GetComponentInChildren<Text>();
 
-        _title.text = string.Format("Tap to start");
+        _title.text = "Tap on memories to refresh them.\n" +
+                      "Try to keep them all.\n";
     }
 
     public static void LoadScene()
