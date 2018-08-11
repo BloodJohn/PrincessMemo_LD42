@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        CastleController.LoadScene();
+        IntroController.LoadScene();
     }
 
     public static void LoadScene()

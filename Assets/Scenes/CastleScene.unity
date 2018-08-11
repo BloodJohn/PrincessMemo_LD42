@@ -199,6 +199,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1447838007}
+  - {fileID: 1209459007}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -255,7 +256,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.33
+  orthographic size: 5.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -311,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a173eaa02eb6ab248ba6184394c03b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 1209459008}
   cardTable: {fileID: 1447838004}
   prefab: {fileID: 1127078216339432, guid: d52cb9e9603ba304fbead15f3e338fa7, type: 2}
   FogSprite: {fileID: 21300000, guid: c2cf3d1d375c1e049af691886b4cea88, type: 3}
@@ -331,6 +333,47 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 967bb65f9c8100d41b563aa2c22de8c2, type: 3}
   - {fileID: 21300000, guid: 0381215d0d0b3224ab7d316c18e1e35e, type: 3}
   - {fileID: 21300000, guid: bcdd5ad2582a56945a6111e35a69d81a, type: 3}
+  storyList:
+  - In January, a little Princess Anne was born into the Royal family. The winter
+    sun sparkled merrily on the frosty patterns on the Windows, the Golden cradle
+    and the Golden curls of the baby.
+  - Ambassadors of neighboring kingdoms brought gifts in honor of the birth of Anna.
+    Bright silks, jewelry, silver rattles and a cage with an amazing bright bird.
+    The bird immediately pecked the King's finger.
+  - During the night thunderstorm, lightning struck the old castle tower and burned
+    it to the ground. Prince Eric cried because he was scared, Princess Anne cried
+    because she loved to play hide and seek.
+  - Prince Eric was taught how to shoot a bow, and he taught his sister how to shoot!
+    Princess Anna decided to shoot a straw stuffed in the yard more interesting embroidery.
+  - Merchants told that in the Northern Kingdom the Princess spoke to a toad, and
+    that turned the Princess into a frog - so in toad's opinion it is more beautiful!
+    The Princess is now forbidden to talk to strange toads!
+  - 'The Royal family and the yard are going hunting: the merchant saw a deer in the
+    forest with Golden horns! On the meadow broke the striped tents, the hunters were
+    combing the woods, but the deer was not caught.'
+  - Harvest in the Kingdom is collected, in the castle will be an autumn ball! The
+    Princess urgently needs some new dresses with fashionable long sleeves!
+  - 'Prince Philip came again from the neighboring Kingdom. The Prince in an elegant
+    blue camisole under the eye color and dancing well: only twice the Princess stepped
+    on a fashionable long sleeve!'
+  - Prince Philip sent a messenger again with a letter. He writes that the castle
+    yard played a newly invented game of ball, broke two Windows and the heart of
+    castellan. Congratulates Princess with merry Christmas.
+  - The Princess has her practice again. The Queen said that negotiations on tariffs
+    with the river traders is a delicate art. To mention the range of our archers
+    here right away - don't.
+  - Some merchant says that the Princess's wedding dress will be green. Green! As
+    soon as the language turned to talk nasty about it.
+  - The wedding of Prince Philip and Princess Anne struck everyone with its splendor!
+    The festive bell ringing shocked seven crows, all agreed that this is a good sign.
+  - It's not fair! The Princess to teach the geography of the Northern provinces,
+    and the Prince deftly got out - went to the mountain with a detachment to catch
+    the robbers?!
+  - Merchants say that robbers in the mountains with here taken of teeth! How does
+    he expect the Princess to receive ambassadors, when you fear anything?
+  - 'Princess Anne and Prince Philip had a daughter in January. Parents have already
+    decided what will warn the baby: do not believe the merchants and do not talk
+    to unfamiliar toads.'
 --- !u!4 &758944068
 Transform:
   m_ObjectHideFlags: 0
@@ -416,7 +459,7 @@ GameObject:
   - component: {fileID: 1125278487}
   - component: {fileID: 1125278486}
   m_Layer: 0
-  m_Name: cstle Back
+  m_Name: CastleBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,12 +518,95 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125278485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.09, z: 0}
+  m_LocalPosition: {x: 0, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1209459006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209459007}
+  - component: {fileID: 1209459009}
+  - component: {fileID: 1209459008}
+  m_Layer: 5
+  m_Name: DescriptionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1209459007
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209459006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 235123992}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 80}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1209459008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209459006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9969692, g: 1, b: 0.48584908, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 21
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 6
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u0412 \u044F\u043D\u0432\u0430\u0440\u0435 \u0432 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0441\u043A\u043E\u0439
+    \u0441\u0435\u043C\u044C\u0435 \u0440\u043E\u0434\u0438\u043B\u0430\u0441\u044C
+    \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0430\u044F \u043F\u0440\u0438\u043D\u0446\u0435\u0441\u0441\u0430
+    \u0410\u043D\u043D\u0430. \u0417\u0438\u043C\u043D\u0435\u0435 \u0441\u043E\u043B\u043D\u0446\u0435
+    \u0432\u0435\u0441\u0435\u043B\u043E \u0438\u0441\u043A\u0440\u0438\u043B\u043E\u0441\u044C
+    \u043D\u0430 \u043C\u043E\u0440\u043E\u0437\u043D\u044B\u0445 \u0443\u0437\u043E\u0440\u0430\u0445
+    \u043D\u0430 \u043E\u043A\u043D\u0430\u0445, \u0437\u043E\u043B\u043E\u0442\u043E\u0439
+    \u043A\u043E\u043B\u044B\u0431\u0435\u043B\u0438 \u0438 \u0437\u043E\u043B\u043E\u0442\u044B\u0445
+    \u043A\u0443\u0434\u0440\u044F\u0445 \u043C\u043B\u0430\u0434\u0435\u043D\u0446\u0430."
+--- !u!222 &1209459009
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209459006}
+  m_CullTransparentMesh: 0
 --- !u!1 &1447838003
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,8 +695,8 @@ RectTransform:
   m_Father: {fileID: 235123992}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1000}
   m_SizeDelta: {x: 600, y: 1000}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}

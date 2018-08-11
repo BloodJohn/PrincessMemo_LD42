@@ -10,11 +10,13 @@ public class CastleController : MonoBehaviour
 {
     private const int CardMax = 15;
 
+    public Text descriptionText;
     public GridLayoutGroup cardTable;
     public GameObject prefab;
     public Sprite FogSprite;
     public Sprite DeleteSprite;
     public Sprite[] CardSpriteList;
+    public string[] storyList;
     private int cardIndex;
 
     private readonly List<CardController> cardList = new List<CardController>(CardMax);
@@ -36,6 +38,7 @@ public class CastleController : MonoBehaviour
             cardList[i].Init(this);
         }
 
+        descriptionText.text = "Tap on the picture to open the next one";
         turnCount = 0;
         AddCard();
     }

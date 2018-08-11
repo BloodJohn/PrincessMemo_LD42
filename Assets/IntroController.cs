@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoseController : MonoBehaviour
+public class IntroController : MonoBehaviour
 {
     public Button ScreenBtn;
     private Text _title;
@@ -18,22 +18,18 @@ public class LoseController : MonoBehaviour
         ScreenBtn.onClick.AddListener(OnClick);
         _title = ScreenBtn.gameObject.GetComponentInChildren<Text>();
 
-        _title.text = string.Format(
-            "The end\n\n" +
-            "Remained {0} of memories\n\n" +
-            "Try again?", 
-            GameController.Instance.saveMemoCount);
+        _title.text = string.Format("Tap to start");
     }
 
     public static void LoadScene()
     {
-        Debug.LogFormat("LoseScene");
-        SceneManager.LoadSceneAsync("LoseScene");
+        Debug.LogFormat("IntroScene");
+        SceneManager.LoadSceneAsync("IntroScene");
     }
 
     private void OnClick()
     {
-        GameController.LoadScene();
+        CastleController.LoadScene();
     }
 
 }

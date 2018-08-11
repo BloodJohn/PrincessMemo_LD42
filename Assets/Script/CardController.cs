@@ -120,7 +120,7 @@ public class CardController : MonoBehaviour
         //Debug.LogFormat("OnClick {0}", Index);
 
         Refresh();
-
+        _castle.descriptionText.text = _castle.storyList[Index];
         _castle.OnTurn();
     }
 }
