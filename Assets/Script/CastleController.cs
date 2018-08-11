@@ -92,6 +92,10 @@ public class CastleController : MonoBehaviour
         if (!cardList
             .OrderBy(item => item.Index)
             .Any(item => item.AddFog()))
-                LoseController.LoadScene();
+        {
+            GameController.Instance.saveMemoCount = cardList.Count(item => item.Status != MemoStatus.Deleted);
+
+            LoseController.LoadScene();
+        }
     }
 }

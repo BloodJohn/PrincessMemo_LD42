@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour
 {
     public static GameController Instance;
 
+    public int saveMemoCount = 0;
+
     private void Awake()
     {
         Instance = this;
