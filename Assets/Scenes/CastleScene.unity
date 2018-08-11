@@ -255,7 +255,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.33
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -313,6 +313,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardTable: {fileID: 1447838004}
   prefab: {fileID: 1127078216339432, guid: d52cb9e9603ba304fbead15f3e338fa7, type: 2}
+  FogSprite: {fileID: 21300000, guid: c2cf3d1d375c1e049af691886b4cea88, type: 3}
+  CardSpriteList:
+  - {fileID: 21300000, guid: 4f84a00df9769214293831bd9638f6df, type: 3}
+  - {fileID: 21300000, guid: be935603870851f44891f9b9ec4e8427, type: 3}
+  - {fileID: 21300000, guid: c05d0dcc51887c644920ccfb10aae819, type: 3}
+  - {fileID: 21300000, guid: d336359aca529ea4eabc747d2ddb7789, type: 3}
+  - {fileID: 21300000, guid: ee07924d767de9641bbe8b279b9fe1c1, type: 3}
+  - {fileID: 21300000, guid: 0da0549912249b7499d36667bf26b47d, type: 3}
+  - {fileID: 21300000, guid: bc2ad86e0a45dae449f4dd060dd2ad20, type: 3}
+  - {fileID: 21300000, guid: c356a7dd51e89444ba732061ab683f6d, type: 3}
+  - {fileID: 21300000, guid: e38bfc21784e8fe4dadd3257c5fcdcfb, type: 3}
+  - {fileID: 21300000, guid: b2a88836fb1d8ca4db93dd690ba21634, type: 3}
+  - {fileID: 21300000, guid: 3e80336190959e84b884f7407acea8e1, type: 3}
+  - {fileID: 21300000, guid: 7fe255b5f281b0343b9d4739936d7ef9, type: 3}
+  - {fileID: 21300000, guid: 967bb65f9c8100d41b563aa2c22de8c2, type: 3}
+  - {fileID: 21300000, guid: 0381215d0d0b3224ab7d316c18e1e35e, type: 3}
+  - {fileID: 21300000, guid: bcdd5ad2582a56945a6111e35a69d81a, type: 3}
 --- !u!4 &758944068
 Transform:
   m_ObjectHideFlags: 0
@@ -387,6 +404,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1125278485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1125278487}
+  - component: {fileID: 1125278486}
+  m_Layer: 0
+  m_Name: cstle Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1125278486
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125278485}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b4333b28957f8f449b9a7bb0ba0446e2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6, y: 12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1125278487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125278485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447838003
 GameObject:

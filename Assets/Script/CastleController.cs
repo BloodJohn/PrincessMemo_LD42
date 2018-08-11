@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,6 +12,10 @@ public class CastleController : MonoBehaviour
 
     public GridLayoutGroup cardTable;
     public GameObject prefab;
+    public Sprite FogSprite;
+    public Sprite DeleteSprite;
+    public Sprite[] CardSpriteList;
+    private int cardIndex;
 
     private readonly List<CardController> cardList = new List<CardController>(CardMax);
     private int turnCount;
@@ -28,7 +33,7 @@ public class CastleController : MonoBehaviour
             var obj = Instantiate(prefab, cardTable.transform);
             cardList.Add(obj.GetComponent<CardController>());
 
-            cardList[i].Init(this, i);
+            cardList[i].Init(this);
         }
 
         turnCount = 0;
@@ -52,6 +57,16 @@ public class CastleController : MonoBehaviour
         else if (0 == turnCount % 3) AddCard();
     }
 
+    public Sprite GetCardSprite()
+    {
+        cardIndex++;
+        if (cardIndex > CardSpriteList.Length) return CardSpriteList[CardSpriteList.Length-1];
+
+        Debug.LogFormat("GetSprite {0}", cardIndex - 1);
+        return CardSpriteList[cardIndex-1];
+        
+    }
+
     private void BlurCard()
     {
         var rnd = (int)((cardList.Count - 1) * Random.value);
@@ -61,24 +76,22 @@ public class CastleController : MonoBehaviour
     private void AddCard()
     {
         var rnd = (int)((cardList.Count - 1) * Random.value);
-        var description = "memory new";
+
+        if (cardIndex > CardSpriteList.Length) cardIndex = CardSpriteList.Length - 1;
+        var index = cardIndex;
+        cardIndex++;
 
         for (var i = rnd; i < cardList.Count; i++)
-            if (cardList[i].AddMemory(description))
+            if (cardList[i].AddMemory(index))
                 return;
 
         for (var i = 0; i < rnd; i++)
-            if (cardList[i].AddMemory(description))
+            if (cardList[i].AddMemory(index))
                 return;
 
-        for (var i = rnd; i < cardList.Count; i++)
-            if (cardList[i].AddFog())
-                return;
-
-        for (var i = 0; i < rnd; i++)
-            if (cardList[i].AddFog())
-                return;
-
-        LoseController.LoadScene();
+        if (!cardList
+            .OrderBy(item => item.Index)
+            .Any(item => item.AddFog()))
+                LoseController.LoadScene();
     }
 }
