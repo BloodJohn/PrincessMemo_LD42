@@ -19,10 +19,24 @@ public class LoseController : MonoBehaviour
         _title = ScreenBtn.gameObject.GetComponentInChildren<Text>();
 
         _title.text = string.Format(
-            "The end\n\n" +
-            "Remained {0} of memories\n\n" +
-            "Try again?", 
+            "You saved {0} memories\n\n" +
+            "Would you trust a merchant?\n\n" +
+            "A strange talking toad ?\n\n"+
+            "What about your own childhood memories ? \n\n" +
+            "Let's play again!", 
             GameController.Instance.saveMemoCount);
+
+        /*
+You saved 10 memories
+
+Would you trust a merchant? 
+
+A strange talking toad? 
+
+What about your own childhood memories?
+
+Let's play again!
+         */
     }
 
     public static void LoadScene()

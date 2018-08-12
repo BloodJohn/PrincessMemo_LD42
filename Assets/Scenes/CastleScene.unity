@@ -329,7 +329,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f421e7285e1df4c43acc5ae2f7c2b097, type: 3}
   - {fileID: 21300000, guid: 8daa864fc3df5434eba0fa6db6efaca1, type: 3}
   - {fileID: 21300000, guid: 8f5090867567b8940943f5299ba424c1, type: 3}
-  - {fileID: 21300000, guid: 7fe255b5f281b0343b9d4739936d7ef9, type: 3}
+  - {fileID: 21300000, guid: 13dd5baf369414e47830157e426b1243, type: 3}
   - {fileID: 21300000, guid: 967bb65f9c8100d41b563aa2c22de8c2, type: 3}
   - {fileID: 21300000, guid: 0381215d0d0b3224ab7d316c18e1e35e, type: 3}
   - {fileID: 21300000, guid: 88e671ab05d174b47b92969d6e06d29e, type: 3}
@@ -382,9 +382,9 @@ MonoBehaviour:
   - "Neighbour kingdoms used the birth of the princess to strengthten ties between
     their realms and sent ambassadors with gifts. One unfortunate gift - a bird -
     bit the King\u2019s finger though, what a diplomatic scandal."
-  - Princesses Anna and Zoe played together when their parents met. Princess Anna
-    cried, when the tower where she and Zoe played together burned during a thunderstorm,
-    and people in the castle thought it was a bad omen.
+  - Anna and Zoe played together when their parents met. Princess Anna cried, when
+    the tower where she and Zoe played together burned during a thunderstorm, and
+    people in the castle thought it was a bad omen.
   - "When Anna\u2019s brother started his archery lessons, he taught his sister to
     shoot as well. The King objected, the Queen argued it was a useful skill for the
     princess too in these troubled times."
