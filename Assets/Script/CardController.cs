@@ -12,30 +12,30 @@ public enum MemoStatus
 
 public class CardController : MonoBehaviour
 {
-    public int Index;
-    public MemoStatus Status = MemoStatus.Future;
-    public bool Fog = false;
+    [HideInInspector] public int Index;
+    [HideInInspector] public MemoStatus Status = MemoStatus.Future;
+    [HideInInspector] public bool Fog = false;
+    public Image maskImage;
+    public Image overImage;
+    public Image cardImage;
 
-    public Color[] colorList;
+    public Sprite[] maskList;
+    public Sprite[] overList;
 
     private CastleController _castle;
     private Button _button;
-    private Image _image;
-    private Text _text;
+
+    private static readonly Color AlfaColor = new Color(1f,1f,1f,0f);
 
     private void Awake()
     {
-        _image = GetComponent<Image>();
-        _text = GetComponentInChildren<Text>();
-
-        _button = GetComponent<Button>();
+        _button = GetComponentInChildren<Button>();
         _button.onClick.AddListener(OnClick);
     }
 
     public void Init(CastleController castle)
     {
         _castle = castle;
-        
         Status = MemoStatus.Future;
         UpdateStatus();
     }
@@ -44,9 +44,9 @@ public class CardController : MonoBehaviour
     {
         if (Status != MemoStatus.Future) return false;
         Index = index;
-        _image.sprite = _castle.CardSpriteList[Index];
+        Fog = false;
         Status = MemoStatus.Shine;
-        _text.text = string.Empty;
+        cardImage.sprite = _castle.CardSpriteList[Index];
         UpdateStatus();
 
         return true;
@@ -80,37 +80,51 @@ public class CardController : MonoBehaviour
         UpdateStatus();
 
         //туман временно рассеивается!
-        _image.sprite = _castle.CardSpriteList[Index];
-        _image.color = colorList[(int) MemoStatus.Shine];
+        cardImage.sprite = _castle.CardSpriteList[Index];
+        //cardImage.color = colorList[(int) MemoStatus.Shine];
     }
 
-    private void UpdateStatus()
+    private void UpdateStatus(bool useFog = true)
     {
-        _image.color = colorList[(int) Status];
-        if (Fog)
+        cardImage.color = Color.white;
+        if (useFog && Fog)
         {
-            _image.color = colorList[(int)MemoStatus.Fresh];
-            _image.sprite = _castle.FogSprite;
+            cardImage.sprite = _castle.FogSprite;
+            maskImage.sprite = maskList[0];
+            overImage.gameObject.SetActive(false);
+            return;
         }
 
         switch (Status)
         {
             case MemoStatus.Future:
+                cardImage.color = AlfaColor;
                 _button.interactable = false;
+                maskImage.sprite = maskList[0];
+                overImage.gameObject.SetActive(false);
                 break;
             case MemoStatus.Shine:
                 _button.interactable = true;
+                maskImage.sprite = maskList[0];
+                overImage.gameObject.SetActive(false);
                 break;
             case MemoStatus.Fresh:
                 _button.interactable = true;
+                maskImage.sprite = maskList[1];
+                overImage.sprite = overList[0];
+                overImage.gameObject.SetActive(true);
                 break;
             case MemoStatus.Vague:
                 _button.interactable = true;
+                maskImage.sprite = maskList[2];
+                overImage.sprite = overList[1];
+                overImage.gameObject.SetActive(true);
                 break;
             case MemoStatus.Deleted:
                 _button.interactable = false;
-                _image.color = colorList[(int)MemoStatus.Deleted];
-                _image.sprite = _castle.DeleteSprite;
+                cardImage.sprite = _castle.DeleteSprite;
+                maskImage.sprite = maskList[0];
+                overImage.gameObject.SetActive(false);
                 break;
         }
     }
@@ -118,7 +132,6 @@ public class CardController : MonoBehaviour
     private void OnClick()
     {
         Refresh();
-        _castle.descriptionText.text = _castle.GetStory(Index,Fog);
-        _castle.OnTurn();
+        _castle.OnTurn(Index, Fog);
     }
 }

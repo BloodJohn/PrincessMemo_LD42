@@ -56,23 +56,16 @@ public class CastleController : MonoBehaviour
         SceneManager.LoadSceneAsync("CastleScene");
     }
 
-    public void OnTurn()
+    public void OnTurn(int index, bool isFog)
     {
+        turnCount++;
+        descriptionText.text = isFog ? oldStoryList[index] : storyList[index];
+
         for (var i = 0; i < 2; i++)
             BlurCard();
 
-        turnCount++;
-
         if (turnCount < 6) AddCard();
         else if (0 == turnCount % 3) AddCard();
-    }
-
-    public string GetStory(int index, bool isFog)
-    {
-        if (isFog)
-            return oldStoryList[index];
-        else
-            return storyList[index];
     }
 
     private void BlurCard()
