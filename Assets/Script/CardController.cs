@@ -117,10 +117,8 @@ public class CardController : MonoBehaviour
 
     private void OnClick()
     {
-        //Debug.LogFormat("OnClick {0}", Index);
-
         Refresh();
-        _castle.descriptionText.text = _castle.storyList[Index];
+        _castle.descriptionText.text = _castle.GetStory(Index,Fog);
         _castle.OnTurn();
     }
 }

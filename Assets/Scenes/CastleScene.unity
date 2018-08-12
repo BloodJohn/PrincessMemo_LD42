@@ -327,7 +327,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bc2ad86e0a45dae449f4dd060dd2ad20, type: 3}
   - {fileID: 21300000, guid: c356a7dd51e89444ba732061ab683f6d, type: 3}
   - {fileID: 21300000, guid: f421e7285e1df4c43acc5ae2f7c2b097, type: 3}
-  - {fileID: 21300000, guid: b2a88836fb1d8ca4db93dd690ba21634, type: 3}
+  - {fileID: 21300000, guid: 8daa864fc3df5434eba0fa6db6efaca1, type: 3}
   - {fileID: 21300000, guid: 8f5090867567b8940943f5299ba424c1, type: 3}
   - {fileID: 21300000, guid: 7fe255b5f281b0343b9d4739936d7ef9, type: 3}
   - {fileID: 21300000, guid: 967bb65f9c8100d41b563aa2c22de8c2, type: 3}
@@ -337,18 +337,16 @@ MonoBehaviour:
   - "In January the royal family welcomed the little princess Anna. Winter sun merrily
     reflected on the frosting on the windows, the gold crib and the baby\u2019s golden
     curls."
-  - "Ambassadors of the neighboring kingdoms brought presents for Anna\u2019s birthday.
-    Bright silks, jewelry, silver rattles and a cage with a wonderful bright bird.
-    The bird immediately proceeded to peck at the King\u2019s finger."
+  - Ambassadors from other kingdoms arrived, bearing presents. Silks, jewelry and
+    a cage with a rare bright bird. The bird proceeded to peck at the King's finger.
   - "During a thunderstorm a lightning hit an old tower and it burned to the ground.
     Prince Eric, Anna\u2019s brother, cried because he was scared, Anna cried because
     she liked to pla hide and seek in that tower."
   - "Prince Eric was taught archery and he\u2019s taught his sister to shoot! Princess
     Anna thinks shooting arrows at a straw dummy in the courtyard is much more fun
     that embroidering."
-  - Merchants reported that the Northern kingdom princess started talking to a toad
-    and the toad turned the poor princess into a frog - she was prettier as a frog
-    according to the toad! Princess Anna is banned from talking to stranger toads.
+  - Merchants say the Northern princess met a talking toad and the toad turned the
+    princess into a frog! Princess Anna is banned from talking to strange toads.
   - 'The royal family and the court go to a hunt: a merchant saw a deer with golden
     horns in the forest! Big striped tents were pitched on the meadow, hunters scoured
     the forest, but no luck with the deer.'
@@ -378,6 +376,52 @@ MonoBehaviour:
   - "In January Princess Anna and Prince Philip welcomed a daughter. The parents already
     decided to warn their child not to trust merchant\u2019s tales and not to talk
     to stranger frogs."
+  oldStoryList:
+  - In January the royal family the little princess Anna was born. Their royal neighbours
+    to the North welcomed princess Zoe to the world too. Two royal families decided
+    their daughters are going to be playmates and hopefully friends.
+  - "Neighbour kingdoms used the birth of the princess to strengthten ties between
+    their realms and sent ambassadors with gifts. One unfortunate gift - a bird -
+    bit the King\u2019s finger though, what a diplomatic scandal."
+  - Princess Anna and Princess Zoe played together when their allied parents met.
+    Princess Anna cried, when the tower where she and Zoe played together burned during
+    a thunderstorm, and people in the castle thought it was a bad omen.
+  - "When Anna\u2019s brother started his archery lessons, he taught his sister to
+    shoot as well. The King objected, the Queen argued it was a useful skill for the
+    princess too in these troubled times."
+  - Rumors about Princess Zoe turning into a frog by wicked magic reached the kingdom.
+    Zoe's parents wrote about Zoe's hives and burning fever after a stroll on a swamp
+    to look at toads.
+  - The royal family and court go to the forest - presumably to hunt an rumored enchanted
+    deer, but what a coincidence - the first known case of the Northern swamp plague
+    was confirmed in the capital the day before they left for the hunt in a hurry.
+  - The weather became chilly after the harvest, and the swamp plague abated. Time
+    to celebrate this relief with a ball in the castle! The Princess cheers up with
+    preparations and new dresses, but still misses Zoe.
+  - "Prince Philip from the nearby kingdom visits often and Princess Anna starts to
+    like his company. He looks good in the new blue frock and dances well - it almost
+    doesn\u2019t look like he has two left feet!"
+  - "Prince Philip added his message to the intel missive his parents exchange with
+    Anna\u2019s parents. Looks like the plague disappeared, playing the new ball game
+    is fun but not next to breakable objects! Merry Christmas, dear Anna!"
+  - Running a family business takes a lot of learning, and a kingdom is definitely
+    a family business for royals. Princess Anna failed a diplomacy test again.
+  - "Nasty gossip claims the princess gets married in a hurry and can\u2019t wear
+    a white dress in good consience. The royal guard have been dispatched to find
+    the source of the rumor."
+  - "Prince Philip and Princess Anna\u2019s wedding was great, but seven crows fell
+    out of the sky after it, shocked by the mighty bell ringing. The old folk says
+    seven crows mean a secret, but maybe it\u2019s going to be a good secret?"
+  - "Philip\u2019s parents get older and Princess Anna has to learn everything about
+    her new home kingdom to rule it well while Philip is busy dealing with trouble
+    in the far reaches of the realm."
+  - The new fear of a plague sparks up, some people panic, run away from the cities
+    and start robbing people on the mountain road! Princess Anna is scared, but has
+    to negotiate the possible quarantine measures with ambassadors.
+  - "Winter is a safe time now when evil humors from the swamps are frozen and tame.
+    Princess Anna gives birth to a daughter - Zoe, named for Anna\u2019s childhood
+    friend. Philip and Anna are going to teach their child to control rumors and keep
+    away from swamps when her turn to rule comes, and hope for the best."
 --- !u!4 &758944068
 Transform:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class CastleController : MonoBehaviour
     public Sprite DeleteSprite;
     public Sprite[] CardSpriteList;
     public string[] storyList;
+    public string[] oldStoryList;
     private int cardIndex;
 
     private readonly List<CardController> cardList = new List<CardController>(CardMax);
@@ -41,6 +42,12 @@ public class CastleController : MonoBehaviour
         descriptionText.text = "Tap on the picture to open the next one";
         turnCount = 0;
         AddCard();
+
+        /*foreach (var story in storyList)
+            Debug.AssertFormat(story.Length <= 216, "{0}:{1}", story.Length, story);
+
+        foreach (var story in oldStoryList)
+            Debug.AssertFormat(story.Length <= 216, "{0}:{1}", story.Length, story);*/
     }
 
     public static void LoadScene()
@@ -60,14 +67,12 @@ public class CastleController : MonoBehaviour
         else if (0 == turnCount % 3) AddCard();
     }
 
-    public Sprite GetCardSprite()
+    public string GetStory(int index, bool isFog)
     {
-        cardIndex++;
-        if (cardIndex > CardSpriteList.Length) return CardSpriteList[CardSpriteList.Length-1];
-
-        Debug.LogFormat("GetSprite {0}", cardIndex - 1);
-        return CardSpriteList[cardIndex-1];
-        
+        if (isFog)
+            return oldStoryList[index];
+        else
+            return storyList[index];
     }
 
     private void BlurCard()
