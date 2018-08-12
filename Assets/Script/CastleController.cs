@@ -39,7 +39,8 @@ public class CastleController : MonoBehaviour
             cardList[i].Init(this);
         }
 
-        descriptionText.text = "Tap on the picture to open the next one";
+        descriptionText.text = "Tap on picture to open next memory\n" +
+                               "Tap on damaged picture to refresh them\n";
         turnCount = 0;
         AddCard();
 

@@ -315,15 +315,15 @@ MonoBehaviour:
   descriptionText: {fileID: 1209459008}
   cardTable: {fileID: 1447838004}
   prefab: {fileID: 1344386158945394, guid: d52cb9e9603ba304fbead15f3e338fa7, type: 2}
-  FogSprite: {fileID: 21300000, guid: b9b790a91128c564a83b3ea00c80b018, type: 3}
-  DeleteSprite: {fileID: 21300000, guid: 3d5d43c313343734cbad6ac4be5df775, type: 3}
+  FogSprite: {fileID: 21300000, guid: c2cf3d1d375c1e049af691886b4cea88, type: 3}
+  DeleteSprite: {fileID: 21300000, guid: cab1eac11c68ad84da8f98db63dbb57b, type: 3}
   CardSpriteList:
   - {fileID: 21300000, guid: 7f958d44de2da374ba00bd423adbbe89, type: 3}
   - {fileID: 21300000, guid: be935603870851f44891f9b9ec4e8427, type: 3}
   - {fileID: 21300000, guid: c05d0dcc51887c644920ccfb10aae819, type: 3}
-  - {fileID: 21300000, guid: d336359aca529ea4eabc747d2ddb7789, type: 3}
+  - {fileID: 21300000, guid: 45401289adc0b084e9b7aadc8f569b46, type: 3}
   - {fileID: 21300000, guid: f9ee19a89222d3944b3401722db99dd7, type: 3}
-  - {fileID: 21300000, guid: 0da0549912249b7499d36667bf26b47d, type: 3}
+  - {fileID: 21300000, guid: e911faf902489294fbf7b8d49a42e76e, type: 3}
   - {fileID: 21300000, guid: bc2ad86e0a45dae449f4dd060dd2ad20, type: 3}
   - {fileID: 21300000, guid: c356a7dd51e89444ba732061ab683f6d, type: 3}
   - {fileID: 21300000, guid: f421e7285e1df4c43acc5ae2f7c2b097, type: 3}
@@ -355,10 +355,9 @@ MonoBehaviour:
   - "Prince Philip from the neighboring kingdom has visited again. The prince looks
     good in his blue coat and dances well: he stepped on the Princess\u2019 fashionable
     long sleeve only twice!"
-  - "Prince Philip\u2019s sent a messenger with a letter again. He writes about playing
-    the freshly invented ball game in the castle courtyard, which resulted in two
-    broken windows and the housekeeper\u2019s frayed nerves. Also he wishes the Princess
-    a merry Christmas."
+  - "Prince Philip\u2019s sent a messenger again. He writes of a ball game in the
+    castle, which resulted in two broken windows and the housekeeper\u2019s frayed
+    nerves. Also he wishes the Princess a merry Christmas."
   - "The princess is in traineeship again. The Queen insists that tariff negotiations
     with river merchants is a delicate art. Mentioning the range of the royal archers\u2019
     long bows right in the beginning is a big no-no."
@@ -377,47 +376,47 @@ MonoBehaviour:
     decided to warn their child not to trust merchant\u2019s tales and not to talk
     to stranger frogs."
   oldStoryList:
-  - In January the royal family the little princess Anna was born. Their royal neighbours
-    to the North welcomed princess Zoe to the world too. Two royal families decided
-    their daughters are going to be playmates and hopefully friends.
+  - In January the little princess Anna was born. The royal neighbours to the North
+    welcomed princess Zoe to the world too. Two royal families decided their daughters
+    are going to be playmates and hopefully friends.
   - "Neighbour kingdoms used the birth of the princess to strengthten ties between
     their realms and sent ambassadors with gifts. One unfortunate gift - a bird -
     bit the King\u2019s finger though, what a diplomatic scandal."
-  - Princess Anna and Princess Zoe played together when their allied parents met.
-    Princess Anna cried, when the tower where she and Zoe played together burned during
-    a thunderstorm, and people in the castle thought it was a bad omen.
+  - Princesses Anna and Zoe played together when their parents met. Princess Anna
+    cried, when the tower where she and Zoe played together burned during a thunderstorm,
+    and people in the castle thought it was a bad omen.
   - "When Anna\u2019s brother started his archery lessons, he taught his sister to
     shoot as well. The King objected, the Queen argued it was a useful skill for the
     princess too in these troubled times."
   - Rumors about Princess Zoe turning into a frog by wicked magic reached the kingdom.
     Zoe's parents wrote about Zoe's hives and burning fever after a stroll on a swamp
     to look at toads.
-  - The royal family and court go to the forest - presumably to hunt an rumored enchanted
-    deer, but what a coincidence - the first known case of the Northern swamp plague
-    was confirmed in the capital the day before they left for the hunt in a hurry.
+  - The royals and the court go to the forest - to hunt a fantastic beast, the first
+    known case of the Northern swamp plague was confirmed in the capital the day before
+    they left for the hunt in a hurry.
   - The weather became chilly after the harvest, and the swamp plague abated. Time
     to celebrate this relief with a ball in the castle! The Princess cheers up with
     preparations and new dresses, but still misses Zoe.
   - "Prince Philip from the nearby kingdom visits often and Princess Anna starts to
     like his company. He looks good in the new blue frock and dances well - it almost
     doesn\u2019t look like he has two left feet!"
-  - "Prince Philip added his message to the intel missive his parents exchange with
-    Anna\u2019s parents. Looks like the plague disappeared, playing the new ball game
-    is fun but not next to breakable objects! Merry Christmas, dear Anna!"
+  - Prince Philip added his letter to the intel the kingdoms exchange. Looks like
+    the plague disappeared, playing the new ball game is fun but not next to breakable
+    objects! Merry Christmas, dear Anna!
   - Running a family business takes a lot of learning, and a kingdom is definitely
     a family business for royals. Princess Anna failed a diplomacy test again.
   - "Nasty gossip claims the princess gets married in a hurry and can\u2019t wear
     a white dress in good consience. The royal guard have been dispatched to find
     the source of the rumor."
   - "Prince Philip and Princess Anna\u2019s wedding was great, but seven crows fell
-    out of the sky after it, shocked by the mighty bell ringing. The old folk says
-    seven crows mean a secret, but maybe it\u2019s going to be a good secret?"
+    out of the sky after it, shocked by the mighty bell ringing. The old folk frowns,
+    the rest decide to see it as a good sign."
   - "Philip\u2019s parents get older and Princess Anna has to learn everything about
     her new home kingdom to rule it well while Philip is busy dealing with trouble
     in the far reaches of the realm."
-  - The new fear of a plague sparks up, some people panic, run away from the cities
-    and start robbing people on the mountain road! Princess Anna is scared, but has
-    to negotiate the possible quarantine measures with ambassadors.
+  - The new fear of a plague sparks up, people run for the hills, and some start robbing
+    merchants on the mountain road! Princess Anna is scared, but talks possible quarantine
+    measures with ambassadors.
   - "Winter is a safe time now when evil humors from the swamps are frozen and tame.
     Princess Anna gives birth to a daughter - Zoe, named for Anna\u2019s childhood
     friend. Philip and Anna are going to teach their child to control rumors and keep

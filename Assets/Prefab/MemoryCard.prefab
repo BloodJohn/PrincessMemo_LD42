@@ -111,10 +111,10 @@ MonoBehaviour:
   cardImage: {fileID: 114356926082020498}
   maskList:
   - {fileID: 21300000, guid: 1ee024ca7995e0e4e91c595cb855fe2d, type: 3}
-  - {fileID: 21300000, guid: afb4ea241a7b274448c45905f5881f76, type: 3}
-  - {fileID: 21300000, guid: ac6c41329f38c604f8c9498c523a1c69, type: 3}
+  - {fileID: 21300000, guid: 3daa90b2f2bd0d146b85f1d86e99591c, type: 3}
+  - {fileID: 21300000, guid: 1ee024ca7995e0e4e91c595cb855fe2d, type: 3}
   overList:
-  - {fileID: 21300000, guid: 9456bf67d1e7aad408145ffc2ab66803, type: 3}
+  - {fileID: 21300000, guid: 0419627a6daa9ec4487d1efa8bcb47fc, type: 3}
   - {fileID: 21300000, guid: 80c2226d328508549b3312d7a4fc34e9, type: 3}
 --- !u!114 &114689188444104812
 MonoBehaviour:
