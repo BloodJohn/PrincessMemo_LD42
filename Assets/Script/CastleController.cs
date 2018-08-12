@@ -18,10 +18,14 @@ public class CastleController : MonoBehaviour
     public Sprite[] CardSpriteList;
     public string[] storyList;
     public string[] oldStoryList;
+    public AudioClip[] soundList;
+
     private int cardIndex;
 
     private readonly List<CardController> cardList = new List<CardController>(CardMax);
     private int turnCount;
+
+    private AudioSource _sound;
 
     void Awake()
     {
@@ -30,6 +34,8 @@ public class CastleController : MonoBehaviour
             GameController.LoadScene();
             return;
         }
+
+        _sound = GetComponent<AudioSource>();
 
         for (var i = 0; i < CardMax; i++)
         {
@@ -57,7 +63,7 @@ public class CastleController : MonoBehaviour
         SceneManager.LoadSceneAsync("CastleScene");
     }
 
-    public void OnTurn(int index, bool isFog)
+    public void OnTurn(int index, bool isFog, MemoStatus status)
     {
         turnCount++;
         descriptionText.text = isFog ? oldStoryList[index] : storyList[index];
@@ -67,6 +73,26 @@ public class CastleController : MonoBehaviour
 
         if (turnCount < 6) AddCard();
         else if (0 == turnCount % 3) AddCard();
+
+        if (isFog)
+        {
+            _sound.PlayOneShot(soundList[3]);
+        }
+        else
+        {
+            switch (status)
+            {
+                case MemoStatus.Shine:
+                    _sound.PlayOneShot(soundList[0]);
+                    break;
+                case MemoStatus.Fresh:
+                    _sound.PlayOneShot(soundList[1]);
+                    break;
+                case MemoStatus.Vague:
+                    _sound.PlayOneShot(soundList[2]);
+                    break;
+            }
+        }
     }
 
     private void BlurCard()

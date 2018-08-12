@@ -131,7 +131,8 @@ public class CardController : MonoBehaviour
 
     private void OnClick()
     {
+        var oldStatus = Status;
         Refresh();
-        _castle.OnTurn(Index, Fog);
+        _castle.OnTurn(Index, Fog, oldStatus);
     }
 }
