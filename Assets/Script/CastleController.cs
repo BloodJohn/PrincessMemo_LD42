@@ -44,11 +44,11 @@ public class CastleController : MonoBehaviour
         turnCount = 0;
         AddCard();
 
-        /*foreach (var story in storyList)
+        foreach (var story in storyList)
             Debug.AssertFormat(story.Length <= 216, "{0}:{1}", story.Length, story);
 
         foreach (var story in oldStoryList)
-            Debug.AssertFormat(story.Length <= 216, "{0}:{1}", story.Length, story);*/
+            Debug.AssertFormat(story.Length <= 216, "{0}:{1}", story.Length, story);
     }
 
     public static void LoadScene()

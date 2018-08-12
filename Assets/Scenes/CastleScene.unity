@@ -417,10 +417,9 @@ MonoBehaviour:
   - The new fear of a plague sparks up, people run for the hills, and some start robbing
     merchants on the mountain road! Princess Anna is scared, but talks possible quarantine
     measures with ambassadors.
-  - "Winter is a safe time now when evil humors from the swamps are frozen and tame.
-    Princess Anna gives birth to a daughter - Zoe, named for Anna\u2019s childhood
-    friend. Philip and Anna are going to teach their child to control rumors and keep
-    away from swamps when her turn to rule comes, and hope for the best."
+  - "In winter, when swamps are tamed by frost, Philip and Anna welcome a baby - Zoe,
+    named after Anna\u2019s lost friend. The new parents are going to teach Zoe to
+    check rumors, keep away from swamps and hope for the best."
 --- !u!4 &758944068
 Transform:
   m_ObjectHideFlags: 0
