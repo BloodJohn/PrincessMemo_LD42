@@ -69,7 +69,8 @@ public class CastleController : MonoBehaviour
         descriptionText.text = isFog ? oldStoryList[index] : storyList[index];
 
         for (var i = 0; i < 2; i++)
-            BlurCard();
+            if (BlurCard())
+                _sound.PlayOneShot(soundList[4]);
 
         if (turnCount < 6) AddCard();
         else if (0 == turnCount % 3) AddCard();
@@ -95,10 +96,10 @@ public class CastleController : MonoBehaviour
         }
     }
 
-    private void BlurCard()
+    private bool BlurCard()
     {
         var rnd = (int)((cardList.Count - 1) * Random.value);
-        cardList[rnd].BlurMemory();
+        return cardList[rnd].BlurMemory();
     }
 
     private void AddCard()

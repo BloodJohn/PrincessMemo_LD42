@@ -63,13 +63,15 @@ public class CardController : MonoBehaviour
         return true;
     }
 
-    public void BlurMemory()
+    public bool BlurMemory()
     {
-        if (Status == MemoStatus.Future) return;
-        if (Status == MemoStatus.Deleted) return;
+        if (Status == MemoStatus.Future) return false;
+        if (Status == MemoStatus.Deleted) return false;
 
         Status++;
         UpdateStatus();
+        //Debug.LogFormat("blur {0} : {1} => {2}", Index, Status, Status==MemoStatus.Deleted);
+        return Status == MemoStatus.Deleted;
     }
 
     private void Refresh()
@@ -87,7 +89,9 @@ public class CardController : MonoBehaviour
     private void UpdateStatus(bool useFog = true)
     {
         cardImage.color = Color.white;
-        if (useFog && Fog)
+        if (useFog && Fog 
+            && Status != MemoStatus.Deleted 
+            && Status != MemoStatus.Future)
         {
             cardImage.sprite = _castle.FogSprite;
             maskImage.sprite = maskList[0];
