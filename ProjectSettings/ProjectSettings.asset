@@ -522,9 +522,9 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psp2ScriptOptimizationLevel: 0
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: b4333b28957f8f449b9a7bb0ba0446e2,
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: d83d71987b665724fa76feeeff87827e,
     type: 3}
-  splashScreenBackgroundSourcePortrait: {fileID: 21300000, guid: b4333b28957f8f449b9a7bb0ba0446e2,
+  splashScreenBackgroundSourcePortrait: {fileID: 21300000, guid: d83d71987b665724fa76feeeff87827e,
     type: 3}
   spritePackerPolicy: 
   webGLMemorySize: 256

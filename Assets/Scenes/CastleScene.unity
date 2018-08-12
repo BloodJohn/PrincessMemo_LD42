@@ -256,7 +256,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.4
+  orthographic size: 5.2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -315,65 +315,69 @@ MonoBehaviour:
   descriptionText: {fileID: 1209459008}
   cardTable: {fileID: 1447838004}
   prefab: {fileID: 1127078216339432, guid: d52cb9e9603ba304fbead15f3e338fa7, type: 2}
-  FogSprite: {fileID: 21300000, guid: c2cf3d1d375c1e049af691886b4cea88, type: 3}
+  FogSprite: {fileID: 21300000, guid: b9b790a91128c564a83b3ea00c80b018, type: 3}
   DeleteSprite: {fileID: 21300000, guid: 3d5d43c313343734cbad6ac4be5df775, type: 3}
   CardSpriteList:
-  - {fileID: 21300000, guid: 4f84a00df9769214293831bd9638f6df, type: 3}
+  - {fileID: 21300000, guid: 7f958d44de2da374ba00bd423adbbe89, type: 3}
   - {fileID: 21300000, guid: be935603870851f44891f9b9ec4e8427, type: 3}
   - {fileID: 21300000, guid: c05d0dcc51887c644920ccfb10aae819, type: 3}
   - {fileID: 21300000, guid: d336359aca529ea4eabc747d2ddb7789, type: 3}
-  - {fileID: 21300000, guid: ee07924d767de9641bbe8b279b9fe1c1, type: 3}
+  - {fileID: 21300000, guid: f9ee19a89222d3944b3401722db99dd7, type: 3}
   - {fileID: 21300000, guid: 0da0549912249b7499d36667bf26b47d, type: 3}
   - {fileID: 21300000, guid: bc2ad86e0a45dae449f4dd060dd2ad20, type: 3}
   - {fileID: 21300000, guid: c356a7dd51e89444ba732061ab683f6d, type: 3}
-  - {fileID: 21300000, guid: e38bfc21784e8fe4dadd3257c5fcdcfb, type: 3}
+  - {fileID: 21300000, guid: f421e7285e1df4c43acc5ae2f7c2b097, type: 3}
   - {fileID: 21300000, guid: b2a88836fb1d8ca4db93dd690ba21634, type: 3}
-  - {fileID: 21300000, guid: 3e80336190959e84b884f7407acea8e1, type: 3}
+  - {fileID: 21300000, guid: 8f5090867567b8940943f5299ba424c1, type: 3}
   - {fileID: 21300000, guid: 7fe255b5f281b0343b9d4739936d7ef9, type: 3}
   - {fileID: 21300000, guid: 967bb65f9c8100d41b563aa2c22de8c2, type: 3}
   - {fileID: 21300000, guid: 0381215d0d0b3224ab7d316c18e1e35e, type: 3}
-  - {fileID: 21300000, guid: bcdd5ad2582a56945a6111e35a69d81a, type: 3}
+  - {fileID: 21300000, guid: 88e671ab05d174b47b92969d6e06d29e, type: 3}
   storyList:
-  - In January, a little Princess Anne was born into the Royal family. The winter
-    sun sparkled merrily on the frosty patterns on the Windows, the Golden cradle
-    and the Golden curls of the baby.
-  - Ambassadors of neighboring kingdoms brought gifts in honor of the birth of Anna.
-    Bright silks, jewelry, silver rattles and a cage with an amazing bright bird.
-    The bird immediately pecked the King's finger.
-  - During the night thunderstorm, lightning struck the old castle tower and burned
-    it to the ground. Prince Eric cried because he was scared, Princess Anne cried
-    because she loved to play hide and seek.
-  - Prince Eric was taught how to shoot a bow, and he taught his sister how to shoot!
-    Princess Anna decided to shoot a straw stuffed in the yard more interesting embroidery.
-  - Merchants told that in the Northern Kingdom the Princess spoke to a toad, and
-    that turned the Princess into a frog - so in toad's opinion it is more beautiful!
-    The Princess is now forbidden to talk to strange toads!
-  - 'The Royal family and the yard are going hunting: the merchant saw a deer in the
-    forest with Golden horns! On the meadow broke the striped tents, the hunters were
-    combing the woods, but the deer was not caught.'
-  - Harvest in the Kingdom is collected, in the castle will be an autumn ball! The
-    Princess urgently needs some new dresses with fashionable long sleeves!
-  - 'Prince Philip came again from the neighboring Kingdom. The Prince in an elegant
-    blue camisole under the eye color and dancing well: only twice the Princess stepped
-    on a fashionable long sleeve!'
-  - Prince Philip sent a messenger again with a letter. He writes that the castle
-    yard played a newly invented game of ball, broke two Windows and the heart of
-    castellan. Congratulates Princess with merry Christmas.
-  - The Princess has her practice again. The Queen said that negotiations on tariffs
-    with the river traders is a delicate art. To mention the range of our archers
-    here right away - don't.
-  - Some merchant says that the Princess's wedding dress will be green. Green! As
-    soon as the language turned to talk nasty about it.
-  - The wedding of Prince Philip and Princess Anne struck everyone with its splendor!
-    The festive bell ringing shocked seven crows, all agreed that this is a good sign.
-  - It's not fair! The Princess to teach the geography of the Northern provinces,
-    and the Prince deftly got out - went to the mountain with a detachment to catch
-    the robbers?!
-  - Merchants say that robbers in the mountains with here taken of teeth! How does
-    he expect the Princess to receive ambassadors, when you fear anything?
-  - 'Princess Anne and Prince Philip had a daughter in January. Parents have already
-    decided what will warn the baby: do not believe the merchants and do not talk
-    to unfamiliar toads.'
+  - "In January the royal family welcomed the little princess Anna. Winter sun merrily
+    reflected on the frosting on the windows, the gold crib and the baby\u2019s golden
+    curls."
+  - "Ambassadors of the neighboring kingdoms brought presents for Anna\u2019s birthday.
+    Bright silks, jewelry, silver rattles and a cage with a wonderful bright bird.
+    The bird immediately proceeded to peck at the King\u2019s finger."
+  - "During a thunderstorm a lightning hit an old tower and it burned to the ground.
+    Prince Eric, Anna\u2019s brother, cried because he was scared, Anna cried because
+    she liked to pla hide and seek in that tower."
+  - "Prince Eric was taught archery and he\u2019s taught his sister to shoot! Princess
+    Anna thinks shooting arrows at a straw dummy in the courtyard is much more fun
+    that embroidering."
+  - Merchants reported that the Northern kingdom princess started talking to a toad
+    and the toad turned the poor princess into a frog - she was prettier as a frog
+    according to the toad! Princess Anna is banned from talking to stranger toads.
+  - 'The royal family and the court go to a hunt: a merchant saw a deer with golden
+    horns in the forest! Big striped tents were pitched on the meadow, hunters scoured
+    the forest, but no luck with the deer.'
+  - "The harvest is over in the kingdom, it\u2019s time for the Autumn ball in the
+    castle! Princess Anna needs new dresses with fashionable long sleeves!"
+  - "Prince Philip from the neighboring kingdom has visited again. The prince looks
+    good in his blue coat and dances well: he stepped on the Princess\u2019 fashionable
+    long sleeve only twice!"
+  - "Prince Philip\u2019s sent a messenger with a letter again. He writes about playing
+    the freshly invented ball game in the castle courtyard, which resulted in two
+    broken windows and the housekeeper\u2019s frayed nerves. Also he wishes the Princess
+    a merry Christmas."
+  - "The princess is in traineeship again. The Queen insists that tariff negotiations
+    with river merchants is a delicate art. Mentioning the range of the royal archers\u2019
+    long bows right in the beginning is a big no-no."
+  - "Some merchant spreads the rumor the Princess\u2019 wedding dress is going to
+    be green. Green! Some people have no shame - spreading such nasty lies!"
+  - "Prince Philip and Princess Anna\u2019s wedding has been gorgeous! Selebratory
+    bell ringing made seven crows fall out of the sky concussed, which was deemed
+    a good omen after some deliberation."
+  - Not fair! The Princess has to learn the geography of the northern provinces, while
+    the prince evaded that altogether to lead troops to the mountains to deal with
+    the highwaymen gang there?!
+  - "Merchants say the highwaymen in the mountain have enormous teeth! How, pray tell,
+    the Princess is supposed to greet ambassadors, when she\u2019s boyond herself
+    with worry?!"
+  - "In January Princess Anna and Prince Philip welcomed a daughter. The parents already
+    decided to warn their child not to trust merchant\u2019s tales and not to talk
+    to stranger frogs."
 --- !u!4 &758944068
 Transform:
   m_ObjectHideFlags: 0
@@ -500,7 +504,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b4333b28957f8f449b9a7bb0ba0446e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d07f78563033684c8cb8189e252cda8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -518,7 +522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125278485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.32, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -557,7 +561,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 80}
+  m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1209459008
 MonoBehaviour:
@@ -579,13 +583,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_Font: {fileID: 12800000, guid: d57fb50920b606648b11ceb0fb13c6e7, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 6
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
@@ -644,10 +648,10 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 0, y: 0}
-  m_Constraint: 0
-  m_ConstraintCount: 2
+  m_CellSize: {x: 170, y: 170}
+  m_Spacing: {x: 2, y: 2}
+  m_Constraint: 1
+  m_ConstraintCount: 3
 --- !u!114 &1447838005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +701,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1000}
-  m_SizeDelta: {x: 600, y: 1000}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 514, y: 860}
+  m_Pivot: {x: 0.5, y: 0}
