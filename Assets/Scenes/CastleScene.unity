@@ -330,7 +330,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8daa864fc3df5434eba0fa6db6efaca1, type: 3}
   - {fileID: 21300000, guid: 8f5090867567b8940943f5299ba424c1, type: 3}
   - {fileID: 21300000, guid: 13dd5baf369414e47830157e426b1243, type: 3}
-  - {fileID: 21300000, guid: 967bb65f9c8100d41b563aa2c22de8c2, type: 3}
+  - {fileID: 21300000, guid: aee07e2c3b656f74aa6c8e62a7b2a274, type: 3}
   - {fileID: 21300000, guid: 0381215d0d0b3224ab7d316c18e1e35e, type: 3}
   - {fileID: 21300000, guid: 88e671ab05d174b47b92969d6e06d29e, type: 3}
   storyList:
