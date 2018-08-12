@@ -98,13 +98,13 @@ public class CastleController : MonoBehaviour
 
     private bool BlurCard()
     {
-        var rnd = (int)((cardList.Count - 1) * Random.value);
+        var rnd = Random.Range(0, cardList.Count);
         return cardList[rnd].BlurMemory();
     }
 
     private void AddCard()
     {
-        var rnd = (int)((cardList.Count - 1) * Random.value);
+        var rnd = Random.Range(0, cardList.Count);
 
         if (cardIndex > CardSpriteList.Length) cardIndex = CardSpriteList.Length - 1;
         var index = cardIndex;
