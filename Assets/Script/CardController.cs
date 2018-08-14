@@ -27,6 +27,9 @@ public class CardController : MonoBehaviour
 
     private static readonly Color AlfaColor = new Color(1f,1f,1f,0f);
 
+    public bool IsDeleted => Status == MemoStatus.Deleted;
+    public bool NotOpen => Status == MemoStatus.Future;
+
     private void Awake()
     {
         _button = GetComponentInChildren<Button>();
@@ -42,7 +45,7 @@ public class CardController : MonoBehaviour
 
     public bool AddMemory(int index)
     {
-        if (Status != MemoStatus.Future) return false;
+        if (!NotOpen) return false;
         Index = index;
         Fog = false;
         Status = MemoStatus.Shine;
@@ -57,7 +60,7 @@ public class CardController : MonoBehaviour
         if (Fog) return false;
         Fog = true;
 
-        if (Status == MemoStatus.Deleted) return false;
+        if (IsDeleted) return false;
 
         UpdateStatus();
         return true;
@@ -65,19 +68,19 @@ public class CardController : MonoBehaviour
 
     public bool BlurMemory()
     {
-        if (Status == MemoStatus.Future) return false;
-        if (Status == MemoStatus.Deleted) return false;
+        if (NotOpen) return false;
+        if (IsDeleted) return false;
 
         Status++;
         UpdateStatus();
         //Debug.LogFormat("blur {0} : {1} => {2}", Index, Status, Status==MemoStatus.Deleted);
-        return Status == MemoStatus.Deleted;
+        return IsDeleted;
     }
 
     private void Refresh()
     {
-        if (Status == MemoStatus.Future) return;
-        if (Status == MemoStatus.Deleted) return;
+        if (NotOpen) return;
+        if (IsDeleted) return;
         Status = MemoStatus.Shine;
         UpdateStatus();
 
@@ -90,8 +93,8 @@ public class CardController : MonoBehaviour
     {
         cardImage.color = Color.white;
         if (useFog && Fog 
-            && Status != MemoStatus.Deleted 
-            && Status != MemoStatus.Future)
+            && !IsDeleted
+            && !NotOpen)
         {
             cardImage.sprite = _castle.FogSprite;
             maskImage.sprite = maskList[0];
@@ -125,7 +128,7 @@ public class CardController : MonoBehaviour
                 overImage.gameObject.SetActive(true);
                 break;
             case MemoStatus.Deleted:
-                _button.interactable = false;
+                _button.interactable = true;
                 cardImage.sprite = _castle.DeleteSprite;
                 maskImage.sprite = maskList[0];
                 overImage.gameObject.SetActive(false);
@@ -135,8 +138,7 @@ public class CardController : MonoBehaviour
 
     private void OnClick()
     {
-        var oldStatus = Status;
+        _castle.OnTurn(this);
         Refresh();
-        _castle.OnTurn(Index, Fog, oldStatus);
     }
 }

@@ -63,25 +63,32 @@ public class CastleController : MonoBehaviour
         SceneManager.LoadSceneAsync("CastleScene");
     }
 
-    public void OnTurn(int index, bool isFog, MemoStatus status)
+    public void OnTurn(CardController card)
     {
+        if (card.IsDeleted)
+        {
+            descriptionText.text = "That memory is gone forever.";
+            _sound.PlayOneShot(soundList[4]);
+            return;
+        }
+
         turnCount++;
-        descriptionText.text = isFog ? oldStoryList[index] : storyList[index];
+        descriptionText.text = card.Fog ? oldStoryList[card.Index] : storyList[card.Index];
 
         for (var i = 0; i < 2; i++)
-            if (BlurCard())
+            if (BlurCard(card))
                 _sound.PlayOneShot(soundList[4]);
 
         if (turnCount < 6) AddCard();
         else if (0 == turnCount % 3) AddCard();
 
-        if (isFog)
+        if (card.Fog)
         {
             _sound.PlayOneShot(soundList[3]);
         }
         else
         {
-            switch (status)
+            switch (card.Status)
             {
                 case MemoStatus.Shine:
                     _sound.PlayOneShot(soundList[0]);
@@ -96,15 +103,18 @@ public class CastleController : MonoBehaviour
         }
     }
 
-    private bool BlurCard()
+    private bool BlurCard(CardController saveCard)
     {
         var rnd = Random.Range(0, cardList.Count);
+        rnd = Math.Min(rnd, cardList.Count - 1);
+        if (saveCard == cardList[rnd]) return false;
         return cardList[rnd].BlurMemory();
     }
 
     private void AddCard()
     {
         var rnd = Random.Range(0, cardList.Count);
+        rnd = Math.Min(rnd, cardList.Count - 1);
 
         if (cardIndex > CardSpriteList.Length) cardIndex = CardSpriteList.Length - 1;
         var index = cardIndex;
@@ -119,6 +129,7 @@ public class CastleController : MonoBehaviour
                 return;
 
         if (!cardList
+            .Where(item => !item.IsDeleted)
             .OrderBy(item => item.Index)
             .Any(item => item.AddFog()))
         {
