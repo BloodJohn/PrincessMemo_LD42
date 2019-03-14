@@ -76,7 +76,8 @@ public class CastleController : MonoBehaviour
     {
         if (card.IsDeleted)
         {
-            descriptionText.text = "That memory is gone forever.";
+            //descriptionText.text = "That memory is gone forever.";
+            descriptionText.text = LocalizationManager.Localize($"Game.LostMemory");
             _sound.PlayOneShot(soundList[4]);
             return;
         }

@@ -26,16 +26,15 @@ namespace Assets.SimpleLocalization
 		/// <summary>Set default language.</summary>
 		private static void AutoLanguage()
 		{
-            if (PlayerPrefs.HasKey(localizationKey))
+            /*if (PlayerPrefs.HasKey(localizationKey))
             {
                 Language = PlayerPrefs.GetString(localizationKey);
             }
-            else
+            else*/
             {
                 Language = Application.systemLanguage == SystemLanguage.Russian ? "Russian" : "English";
             }
 
-            Language = "Russian";
             PlayerPrefs.SetString(localizationKey, Language);
         }
 
