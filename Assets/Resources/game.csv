@@ -1,0 +1,9 @@
+﻿Key;English;Russian
+Game.IntroScene.1;The memories of youth either fade completely or come back bright and vivid - first the childish perception, and then the extra details one learned later.;Воспоминания о юности либо совсем блекнут, либо возвращаются яркими и яркими - сначала детское восприятие, а потом дополнительные детали, которые узнаешь позже.
+Game.IntroScene.2;Catch the snippets of the story and don’t let them fade to learn the story fully and then learn it deeper.;Сохрани обрывки воспоминаний и не позволяй им исчезать, чтобы узнать историю полностью, и взглянуть на нее с высоты прожитых лет.
+
+Game.LoseScene.1;You saved {0} memories;Уцелело {0} эпизодов
+Game.LoseScene.2;Would you trust a merchant?;Ты доверяешь торговцу?
+Game.LoseScene.3;A strange talking toad?;Странная говорящая жаба?
+Game.LoseScene.4;What about your own childhood memories?;А как насчет твоих детских воспоминаний?
+Game.LoseScene.5;Let's play again!;Попробуй еще раз!

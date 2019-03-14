@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using Assets.SimpleLocalization;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IntroController : MonoBehaviour
 {
     public Button ScreenBtn;
+    public Text DescriptionText;
 
     void Awake()
     {
@@ -15,6 +17,9 @@ public class IntroController : MonoBehaviour
         }
 
         ScreenBtn.onClick.AddListener(OnClick);
+
+        DescriptionText.text = LocalizationManager.Localize("Game.IntroScene.1")+"\n"
+            + LocalizationManager.Localize("Game.IntroScene.1");
     }
 
     public static void LoadScene()

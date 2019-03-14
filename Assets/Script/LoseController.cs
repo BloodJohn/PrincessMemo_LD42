@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.SimpleLocalization;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -18,25 +19,12 @@ public class LoseController : MonoBehaviour
         ScreenBtn.onClick.AddListener(OnClick);
         _title = ScreenBtn.gameObject.GetComponentInChildren<Text>();
 
-        _title.text = string.Format(
-            "You saved {0} memories\n\n" +
-            "Would you trust a merchant?\n\n" +
-            "A strange talking toad ?\n\n"+
-            "What about your own childhood memories ? \n\n" +
-            "Let's play again!", 
-            GameController.Instance.saveMemoCount);
-
-        /*
-You saved 10 memories
-
-Would you trust a merchant? 
-
-A strange talking toad? 
-
-What about your own childhood memories?
-
-Let's play again!
-         */
+        _title.text =
+            string.Format(LocalizationManager.Localize("Game.LoseScene.1"), GameController.Instance.saveMemoCount) + "\n\n" +
+            LocalizationManager.Localize("Game.LoseScene.2") + "\n\n" +
+            LocalizationManager.Localize("Game.LoseScene.3") + "\n\n" +
+            LocalizationManager.Localize("Game.LoseScene.4") + "\n\n" +
+            LocalizationManager.Localize("Game.LoseScene.5");
     }
 
     public static void LoadScene()
