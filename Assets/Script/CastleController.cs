@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.SimpleLocalization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -45,8 +46,8 @@ public class CastleController : MonoBehaviour
             cardList[i].Init(this);
         }
 
-        descriptionText.text = "Tap on picture to open next memory\n" +
-                               "Tap on damaged picture to refresh them\n";
+        descriptionText.text = LocalizationManager.Localize("Game.FirstMessage");
+            //"Tap on picture to open next memory\n" + "Tap on damaged picture to refresh them\n";
         turnCount = 0;
         AddCard();
 
@@ -55,6 +56,14 @@ public class CastleController : MonoBehaviour
 
         foreach (var story in oldStoryList)
             Debug.AssertFormat(story.Length <= 216, "{0}:{1}", story.Length, story);
+
+        for (var i = 0; i < 15; i++)
+        {
+            var story = LocalizationManager.Localize($"Game.Story.{i}");
+            Debug.AssertFormat(story.Length <= 210, "Game.Story.{0}:{1}[{2}]", i,story.Length, story);
+            story = LocalizationManager.Localize($"Game.OldStory.{i}");
+            Debug.AssertFormat(story.Length <= 210, "Game.OldStory.{0}:{1}[{2}]", i, story.Length, story);
+        }
     }
 
     public static void LoadScene()
@@ -73,7 +82,10 @@ public class CastleController : MonoBehaviour
         }
 
         turnCount++;
-        descriptionText.text = card.Fog ? oldStoryList[card.Index] : storyList[card.Index];
+        //descriptionText.text = card.Fog ? oldStoryList[card.Index] : storyList[card.Index];
+        descriptionText.text = card.Fog ?
+            LocalizationManager.Localize($"Game.OldStory.{card.Index}") :
+            LocalizationManager.Localize($"Game.OldStory.{card.Index}");
 
         for (var i = 0; i < 2; i++)
             if (BlurCard(card))
