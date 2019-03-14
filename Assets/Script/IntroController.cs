@@ -19,7 +19,7 @@ public class IntroController : MonoBehaviour
         ScreenBtn.onClick.AddListener(OnClick);
 
         DescriptionText.text = LocalizationManager.Localize("Game.IntroScene.1")+"\n"
-            + LocalizationManager.Localize("Game.IntroScene.1");
+            + LocalizationManager.Localize("Game.IntroScene.2");
     }
 
     public static void LoadScene()
