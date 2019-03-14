@@ -35,7 +35,7 @@ namespace Assets.SimpleLocalization
                 Language = Application.systemLanguage == SystemLanguage.Russian ? "Russian" : "English";
             }
 
-            Language = "Russian";
+            //Language = "Russian";
             PlayerPrefs.SetString(localizationKey, Language);
         }
 

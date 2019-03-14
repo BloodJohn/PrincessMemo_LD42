@@ -85,7 +85,7 @@ public class CastleController : MonoBehaviour
         //descriptionText.text = card.Fog ? oldStoryList[card.Index] : storyList[card.Index];
         descriptionText.text = card.Fog ?
             LocalizationManager.Localize($"Game.OldStory.{card.Index}") :
-            LocalizationManager.Localize($"Game.OldStory.{card.Index}");
+            LocalizationManager.Localize($"Game.Story.{card.Index}");
 
         for (var i = 0; i < 2; i++)
             if (BlurCard(card))
